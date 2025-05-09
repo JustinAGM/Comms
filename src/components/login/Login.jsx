@@ -6,7 +6,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "fire
 import { auth, db } from "../../lib/firebase";
 import { doc, setDoc } from "firebase/firestore";
 import { uploadImage } from "../../lib/cloudinary";
-import { useChatStore } from '../../lib/chatStore';
+import { useChatStore } from '../../lib/ChatStore';
 
 
 const Login = ({ setUser }) => {
