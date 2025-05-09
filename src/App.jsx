@@ -8,7 +8,7 @@ import Notification from './components/notification/Notification';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useUserStore } from './lib/UserStore';
 import { auth } from './lib/firebase';
-import { useChatStore } from './lib/ChatStore';
+import { useChatStore } from './lib/chatStore';
 import { ClipLoader } from 'react-spinners';
 
 
