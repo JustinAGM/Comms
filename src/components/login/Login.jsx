@@ -3,10 +3,10 @@ import "./login.css";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "../../lib/firebase";
+import { auth, db } from "./lib/firebase";
 import { doc, setDoc } from "firebase/firestore";
-import { uploadImage } from "../../lib/cloudinary";
-import { useChatStore } from '../../lib/ChatStore';
+import { uploadImage } from "./lib/cloudinary";
+import { useChatStore } from './lib/chatStore';
 
 
 const Login = ({ setUser }) => {
