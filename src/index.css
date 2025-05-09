@@ -1,0 +1,54 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/bgchatapp.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 90vw; 
+  max-width: 1300px;
+  height: 90vh;
+  display: flex;
+  background-color: rgba(59, 247, 206, 0.384);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.loading{
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgb(11, 29, 25);
+  color: white;
+}

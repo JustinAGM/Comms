@@ -1,0 +1,108 @@
+.chatList{
+    flex: 1;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    .search{
+        display: flex;
+        align-items: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        border-bottom: 3px solid #0d5c5f;
+
+        .searchBar{
+            flex: 1;
+            background-color: rgba(17, 25, 40, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 5px;
+
+            input{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+                flex:1;
+            }
+
+            img{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+        }
+
+        .add{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: rgba(17, 25, 40, 0.5);
+        }
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #0d5c5f;
+
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            span{
+                font-weight: 500;
+            }
+            
+            p{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .noChatsMessage {
+        padding: 20px;
+        text-align: center;
+        color: #777;
+      }
+      
+}
+
+
+/*For Scroll of Chat*/
+
+.chatList::-webkit-scrollbar {
+    width: 8px; /* width of vertical scrollbar */
+  }
+  
+  .chatList::-webkit-scrollbar-track {
+    background: transparent; /* or any color */
+    border-radius: 10px;
+  }
+  
+  .chatList::-webkit-scrollbar-thumb {
+    background-color: rgba(3, 255, 242, 0.3); 
+        border-radius: 10px;
+        border: 1px solid rgba(6, 196, 148, 0.2);
+  }
+  
+  .chatList::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(56, 92, 253, 0.952);
+  }
+  
